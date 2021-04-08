@@ -1,12 +1,11 @@
 import React from 'react';
-import IceCream from '../IceCream/IceCream';
+import IceCreamBuilder from '../../containers/IceCreamBuilder/IceCreamBuilder';
 import './Body.css';
 
 const Body = () => {
     return (
         <div className="mainBody">
-            Body
-            <IceCream></IceCream>
+            <IceCreamBuilder></IceCreamBuilder>
         </div>
     );
 };

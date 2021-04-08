@@ -2,15 +2,22 @@ import React from 'react';
 import './IceCream.css';
 import Scoop from './Scoop/Scoop';
 
-const IceCream = () => {
-    return (
-        <div> <div className="iceCream react">
+
+const IceCream = ({ scoops }) => {
+  
+
+  return (
+    <div>
+      <div className="iceCream">
         <p className="cone"></p>
-         <Scoop></Scoop>
+        {scoops.map((scoop) => (
+                    <Scoop key={`${scoop}${Math.random()}`} scoop={scoop} />
+        ))}
+
         <div className="cherry"></div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default IceCream;

@@ -1,11 +1,13 @@
 import React from 'react';
-import './Scoop.css';
+import classes from  './Scoop.module.css';
 
-const Scoop = () => {
+
+const Scoop = ({scoop}) => {
+     
     return (
-        <div className="scope orange">
+        <div className={[classes.scoop,classes[scoop]].join(' ')}/>
             
-        </div>
+        
     );
 };
 
